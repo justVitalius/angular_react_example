@@ -1,0 +1,33 @@
+{
+  "name": "angular_reflux_react_example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "ngreact": "^0.1.7",
+    "react": "^0.13.3",
+    "reflux": "^0.2.11",
+    "webpack": "^1.11.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.8.21",
+    "babel-loader": "^5.3.2",
+    "css-loader": "^0.15.6",
+    "file-loader": "^0.8.4",
+    "http-server": "^0.8.0",
+    "node-sass": "^3.2.0",
+    "sass-loader": "^2.0.0",
+    "style-loader": "^0.12.3"
+  },
+  "scripts": {
+    "server": "./node_modules/.bin/http-server .",
+    "builder": "./node_modules/.bin/webpack",
+    "example": "npm run builder && npm run server"
+  }
+}
