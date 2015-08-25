@@ -5,17 +5,27 @@
     <h1>Example render react component through Angular ngReact</h1>
 
     <hr/>
-    <h3>React over angular rendering</h3>
-    <button ng-click='AppCtrl.changeMonthCount()'>Change number of months</button>
-    <span>Current number of month = {{AppCtrl.datepicker.numberOfMonths}} </span>
+    <h2>React-select component and external props from Angular</h2>
+    <span>Current number of generated data = {{AppCtrl.select.options.length}}</span>
+    <button ng-click='AppCtrl.generateSelectData()'>Change select data</button>
+    <br/>
+    <small>Will automaticaly generate every 5 seconds</small>
+    <react-component name="SelectExample" props="AppCtrl.select"></react-component>
+
     <hr/>
+    <h2>React over angular rendering</h2>
+    <span>Current number of month = {{AppCtrl.datepicker.numberOfMonths}} </span>
+    <button ng-click='AppCtrl.changeMonthCount()'>Change number of months</button>
+    <br/>
+    <small>Will automaticaly generate every 5 seconds</small>
     <h3 style="text-align: center;">
       Selected date: {{AppCtrl.selectedDate}}
     </h3>
     <react-component name="DayPickerExample" props="AppCtrl.datepicker"></react-component>
 
     <hr />
-    <h3>React pure rendering</h3>
+    <h2>React pure rendering</h2>
+    <small>Without interactive with angular</small>
     <div id="range-date-picker">Pure React date picker will be here</div>
 
 

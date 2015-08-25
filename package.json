@@ -15,6 +15,7 @@
     "ngreact": "^0.1.7",
     "react": "^0.13.3",
     "react-day-picker": "^1.0.4",
+    "react-select": "^0.6.5",
     "reflux": "^0.2.11",
     "webpack": "^1.11.0"
   },
