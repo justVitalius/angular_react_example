@@ -9,7 +9,8 @@ class SelectableDayExample extends React.Component {
 
   propTypes() {
     return {
-      handleDateSelect: React.PropTypes.func
+      handleDateSelect: React.PropTypes.func,
+      numberOfMonths: React.PropTypes.number
     }
   }
 
@@ -33,7 +34,7 @@ class SelectableDayExample extends React.Component {
           Дата в react компоненте: { selectedDay.toLocaleDateString('ru-RU') }
         </h3>
         <DayPicker
-          numberOfMonths={4}
+          numberOfMonths={ this.props.numberOfMonths }
           enableOutsideDays={true}
           modifiers={ modifiers }
           onDayClick={ this.handleDayClick.bind(this) }

@@ -3,6 +3,8 @@
   <head></head>
   <body ng-app="app" ng-controller="AppController as AppCtrl">
     <h1>Пример взаимодействия Angular с компонентом React</h1>
+    <button ng-click='AppCtrl.changeMonthCount()'>Изменить число отображаемых календарей</button>
+    <span>Текущее кол-во календарей = {{AppCtrl.datepicker.numberOfMonths}} </span>
     <hr/>
     <h3 style="text-align: center;">
       Дата внутри контроллера: {{AppCtrl.selectedDate}}
