@@ -2,16 +2,20 @@
 <html>
   <head></head>
   <body ng-app="app" ng-controller="AppController as AppCtrl">
-    <h1>Пример взаимодействия Angular с компонентом React</h1>
-    <button ng-click='AppCtrl.changeMonthCount()'>Изменить число отображаемых календарей</button>
-    <span>Текущее кол-во календарей = {{AppCtrl.datepicker.numberOfMonths}} </span>
+    <h1>Example render react component through Angular ngReact</h1>
+
+    <hr/>
+    <h3>React over angular rendering</h3>
+    <button ng-click='AppCtrl.changeMonthCount()'>Change number of months</button>
+    <span>Current number of month = {{AppCtrl.datepicker.numberOfMonths}} </span>
     <hr/>
     <h3 style="text-align: center;">
-      Дата внутри контроллера: {{AppCtrl.selectedDate}}
+      Selected date: {{AppCtrl.selectedDate}}
     </h3>
     <react-component name="DayPickerExample" props="AppCtrl.datepicker"></react-component>
 
     <hr />
+    <h3>React pure rendering</h3>
     <div id="range-date-picker">Pure React date picker will be here</div>
 
 
