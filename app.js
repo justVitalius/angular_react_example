@@ -63,7 +63,7 @@ function AppController($interval){
     var count = Math.ceil(Math.random()*10),
         data = [];
     for(var i=0; i <= count; i++){
-      data.push({value: `value-${i}-${count}`, label: `label ${i} of ${count}`});
+      data.push({value: `value-${i+1}-${count+1}`, label: `label ${i+1} of ${count+1}`});
     }
 
     return data;
